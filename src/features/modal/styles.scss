@@ -1,0 +1,43 @@
+.modal {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba($color: #003264, $alpha: 0.7);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .user-details {
+    width: 400px;
+    background-color: white;
+    opacity: 1;
+    padding: 16px;
+    margin: 15px;
+
+    button {
+      margin-top: 16px;
+      width: 100%;
+    }
+  }
+
+  &.close {
+    display: none;
+  }
+}
+
+.modal-transition-enter {
+  opacity: 0;
+}
+.modal-transition-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.modal-transition-exit {
+  opacity: 1;
+}
+.modal-transition-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}

@@ -1,0 +1,34 @@
+.user-list {
+  margin-top: 16px;
+  min-height: 200px;
+
+  .green-blue-list-item div:hover {
+    cursor: pointer;
+  }
+
+  .loading,
+  .no-result {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  .fade-exit {
+    opacity: 1;
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }
+}
+
+.list-style-first {
+  list-style-type:none;
+  margin-left: -20px;
+}
